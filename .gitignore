@@ -1,0 +1,46 @@
+# Env vars
+*.aws_credentials
+*.aws_exports
+*.env
+
+# SSH Keys
+**/ssh_keys/*
+!**/ssh_keys/.gitkeep
+
+ssh_config
+
+# Other dotfiles
+*.vagrant
+*.log
+*.idea
+*.jar
+*.DS_Store
+*.python-version
+
+# Terraform related
+*.terraform
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+
+# SBT related
+**/src/main/scala/SDTD/*
+!**/src/main/scala/SDTD/.gitkeep
+**/target/
+**/project/project
+**/project/build.properties
+
+!**/kubernetes/v4/*
+!**/kubernetes/v4/src/main/scala/*
+
+# Ansible related
+!**/ansible/templates/ssh_config
+
+# Softwares installed by script
+**/utils
+
+# Cassandra related
+**/clusters/cassandra/readDB.py
+
+# Kubernetes related
+**/clusters/kubernetes/dashboard_token.txt
